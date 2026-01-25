@@ -19,6 +19,7 @@ import {
 import { Button } from "@/components/ui/button";
 import Layout from "@/components/layout/Layout";
 import heroBg from "@/assets/hero-bg.jpeg";
+import { useSmoothScroll } from "@/hooks/use-smooth-scroll";
 
 const fadeInUp = {
   initial: { opacity: 0, y: 20 },
@@ -120,6 +121,7 @@ const differentiators = [
 
 
 const Index = () => {
+  useSmoothScroll();
   return (
     <Layout>
       {/* Hero Section */}
@@ -254,7 +256,7 @@ const Index = () => {
       </section>
       
       {/* Story Section */}
-      <section className="py-24 bg-card/30">
+      <section id="our-story" className="py-24 bg-card/30">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <motion.div
