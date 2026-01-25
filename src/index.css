@@ -15,10 +15,10 @@
     --popover: 222 47% 8%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 220 86% 56%;
-    --primary-foreground: 222 47% 6%;
+    --primary: 235 75% 50%;
+    --primary-foreground: 210 40% 98%;
 
-    --secondary: 215 70% 50%;
+    --secondary: 265 85% 60%;
     --secondary-foreground: 210 40% 98%;
 
     --muted: 222 30% 15%;
@@ -32,37 +32,37 @@
 
     --border: 222 30% 18%;
     --input: 222 30% 18%;
-    --ring: 220 86% 56%;
+    --ring: 235 75% 50%;
 
     --radius: 0.75rem;
 
     /* Custom colors */
-    --neon-blue: 220 86% 56%;
-    --neon-purple: 260 86% 60%;
+    --neon-blue: 235 75% 50%;
+    --neon-purple: 265 85% 60%;
     --neon-cyan: 190 80% 55%;
     --neon-pink: 330 80% 60%;
     
     /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(220 86% 56%) 0%, hsl(215 70% 50%) 100%);
-    --gradient-accent: linear-gradient(135deg, hsl(190 80% 55%) 0%, hsl(220 86% 56%) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(235 75% 50%) 0%, hsl(250 80% 55%) 50%, hsl(265 85% 60%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(190 80% 55%) 0%, hsl(235 75% 50%) 100%);
     --gradient-hero: linear-gradient(180deg, hsl(222 47% 6%) 0%, hsl(222 47% 10%) 50%, hsl(222 47% 6%) 100%);
     --gradient-card: linear-gradient(145deg, hsl(222 47% 10%) 0%, hsl(222 47% 8%) 100%);
-    --gradient-glow: radial-gradient(circle at center, hsl(220 86% 56% / 0.15) 0%, transparent 70%);
+    --gradient-glow: radial-gradient(circle at center, hsl(235 75% 50% / 0.15) 0%, transparent 70%);
 
     /* Shadows */
-    --shadow-neon: 0 0 20px hsl(220 86% 56% / 0.3);
-    --shadow-neon-lg: 0 0 40px hsl(220 86% 56% / 0.4);
+    --shadow-neon: 0 0 20px hsl(235 75% 50% / 0.3);
+    --shadow-neon-lg: 0 0 40px hsl(235 75% 50% / 0.4);
     --shadow-card: 0 4px 24px hsl(222 47% 2% / 0.5);
     --shadow-elevated: 0 8px 32px hsl(222 47% 2% / 0.6);
 
     --sidebar-background: 222 47% 8%;
     --sidebar-foreground: 210 40% 98%;
-    --sidebar-primary: 275 86% 36%;
+    --sidebar-primary: 265 85% 36%;
     --sidebar-primary-foreground: 222 47% 6%;
     --sidebar-accent: 222 30% 15%;
     --sidebar-accent-foreground: 210 40% 98%;
     --sidebar-border: 222 30% 18%;
-    --sidebar-ring: 275 86% 36%;
+    --sidebar-ring: 265 85% 36%;
   }
 
   .dark {
