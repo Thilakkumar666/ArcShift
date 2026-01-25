@@ -222,7 +222,7 @@ const Team = () => {
       </section>
 
       {/* Lead Team */}
-      <section className="py-16 bg-card/30">
+      <section className="py-16 bg-card/20">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}

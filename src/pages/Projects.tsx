@@ -128,7 +128,7 @@ const Projects = () => {
       </section>
 
       {/* Filters */}
-      <section className="py-8 border-y border-border/50 bg-card/30 sticky top-16 md:top-20 z-30">
+      <section className="py-8 border-y border-border/50 bg-card/20 sticky top-16 md:top-20 z-30">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row gap-4 md:items-center md:justify-between">
             <div className="flex items-center gap-2 overflow-x-auto pb-2 md:pb-0">
