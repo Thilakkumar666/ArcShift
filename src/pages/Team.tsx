@@ -23,7 +23,7 @@ const coreTeam: TeamMember[] = [
     role: "President",
     bio: "Full-stack developer passionate about AI and open source. Microsoft Imagine Cup finalist.",
     avatar: "AC",
-    socials: { github: "#", linkedin: "#", email: "alex@techforge.edu" },
+    socials: { github: "#", linkedin: "#", email: "alex@arcshift.edu" },
   },
   {
     id: 2,
@@ -88,7 +88,7 @@ const leadTeam: TeamMember[] = [
     id: 9,
     name: "David Kim",
     role: "Marketing Lead",
-    bio: "Spreading the word about TechForge across campus.",
+    bio: "Spreading the word about ArcShift across campus.",
     avatar: "DK",
     socials: { twitter: "#", linkedin: "#" },
   },
@@ -98,7 +98,7 @@ const leadTeam: TeamMember[] = [
     role: "Outreach Lead",
     bio: "Building industry partnerships and sponsorships.",
     avatar: "AM",
-    socials: { linkedin: "#", email: "outreach@techforge.edu" },
+    socials: { linkedin: "#", email: "outreach@arcshift.edu" },
   },
 ];
 
@@ -190,7 +190,7 @@ const Team = () => {
             </h1>
             <p className="text-xl text-muted-foreground">
               The passionate individuals driving innovation and building the future 
-              at TechForge.
+              at ArcShift.
             </p>
           </motion.div>
         </div>
@@ -209,7 +209,7 @@ const Team = () => {
               Core <span className="gradient-text">Team</span>
             </h2>
             <p className="text-muted-foreground">
-              The leadership team steering TechForge forward
+              The leadership team steering ArcShift forward
             </p>
           </motion.div>
 

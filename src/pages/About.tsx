@@ -49,11 +49,10 @@ const About = () => {
             className="max-w-4xl mx-auto text-center"
           >
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              About <span className="gradient-text">TechForge</span>
+              About <span className="gradient-text">ArcShift</span>
             </h1>
             <p className="text-xl text-muted-foreground">
-              Founded with a vision to bridge the gap between academic learning and industry 
-              requirements, TechForge is where ambition meets opportunity.
+              ArcShift is a dynamic and innovative organization dedicated to fostering technological advancement and collaborative learning. We are committed to bridging the gap between academic knowledge and real-world industry applications, providing a platform where ambitious individuals can thrive and achieve their full potential.
             </p>
           </motion.div>
         </div>
@@ -73,21 +72,13 @@ const About = () => {
               </h2>
               <div className="space-y-4 text-muted-foreground">
                 <p>
-                  TechForge was born from a simple observation: traditional college clubs 
-                  weren't preparing students for the fast-paced world of tech innovation. 
-                  We saw students with incredible potential but no platform to apply their 
-                  skills to real challenges.
+                  ArcShift was founded on the principle that practical experience is paramount in the ever-evolving world of technology. We recognized a need for a student organization that not only keeps pace with industry trends but also actively contributes to them.
                 </p>
                 <p>
-                  In 2022, a group of passionate developers came together with a mission: 
-                  to create a club that operates like a startup—agile, innovative, and 
-                  results-driven. We wanted to build something that would give students 
-                  real experience before they even graduate.
+                  In 2022, a team of forward-thinking developers established ArcShift with the mission to create a startup-like environment that fosters agility, innovation, and a results-driven mindset. Our goal is to provide students with invaluable, real-world experience long before they graduate.
                 </p>
                 <p>
-                  Today, TechForge stands as the premier technical club, with members 
-                  who have competed in and won hackathons hosted by Microsoft, Google, 
-                  Meta, and other leading tech companies.
+                  Today, ArcShift is a leading technical club, with members who have achieved success in hackathons hosted by major tech companies such as Microsoft, Google, and Meta.
                 </p>
               </div>
             </motion.div>
@@ -164,7 +155,7 @@ const About = () => {
               Our <span className="gradient-text">Values</span>
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              These core principles guide everything we do at TechForge
+              These core principles guide everything we do at ArcShift
             </p>
           </motion.div>
 

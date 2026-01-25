@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Zap, Github, Linkedin, Twitter, Instagram, Mail } from "lucide-react";
+import { Rocket, Github, Linkedin, Twitter, Instagram, Mail } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -10,9 +10,9 @@ const Footer = () => {
           <div className="col-span-1 md:col-span-2">
             <Link to="/" className="flex items-center gap-2 mb-4">
               <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
-                <Zap className="w-6 h-6 text-primary-foreground" />
+                <Rocket className="w-6 h-6 text-primary-foreground" />
               </div>
-              <span className="text-xl font-bold gradient-text">TechForge</span>
+              <span className="text-xl font-bold gradient-text">ArcShift</span>
             </Link>
             <p className="text-muted-foreground text-sm max-w-md mb-6">
               Building the future, one hackathon at a time. Join our community of innovators, 
@@ -87,7 +87,7 @@ const Footer = () => {
             <ul className="space-y-2 text-sm">
               <li className="flex items-center gap-2 text-muted-foreground">
                 <Mail className="w-4 h-4" />
-                techforge@college.edu
+                arcshift@college.edu
               </li>
               <li className="text-muted-foreground">
                 Tech Building, Room 301
@@ -101,10 +101,10 @@ const Footer = () => {
 
         <div className="mt-12 pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-muted-foreground">
-            © 2024 TechForge Club. All rights reserved.
+            © 2024 ArcShift Club. All rights reserved.
           </p>
           <p className="text-sm text-muted-foreground">
-            Built with 💙 by TechForge Team
+            Built with 💙 by ArcShift Team
           </p>
         </div>
       </div>

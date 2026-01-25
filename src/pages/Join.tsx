@@ -80,7 +80,7 @@ const Join = () => {
             </div>
             
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Join <span className="gradient-text">TechForge</span>
+              Join <span className="gradient-text">ArcShift</span>
             </h1>
             <p className="text-xl text-muted-foreground">
               Become part of a community that builds, learns, and wins together. 
@@ -100,10 +100,10 @@ const Join = () => {
             className="text-center mb-12"
           >
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Why Join <span className="gradient-text">TechForge?</span>
+              Why Join <span className="gradient-text">ArcShift?</span>
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Being part of TechForge opens doors to opportunities you won't find anywhere else
+              Being part of ArcShift opens doors to opportunities you won't find anywhere else
             </p>
           </motion.div>
 
@@ -142,7 +142,7 @@ const Join = () => {
                 Who Can <span className="gradient-text">Join?</span>
               </h2>
               <p className="text-muted-foreground mb-8">
-                TechForge welcomes everyone who is curious about technology and willing 
+                ArcShift welcomes everyone who is curious about technology and willing 
                 to put in the effort to learn and grow. No prior experience required!
               </p>
 
@@ -192,7 +192,7 @@ const Join = () => {
                     </div>
                     <h4 className="text-xl font-semibold mb-2">Application Submitted!</h4>
                     <p className="text-muted-foreground">
-                      Thank you for your interest in TechForge. We'll review your 
+                      Thank you for your interest in ArcShift. We'll review your 
                       application and get back to you soon.
                     </p>
                   </motion.div>
@@ -264,7 +264,7 @@ const Join = () => {
 
                     <div>
                       <label className="block text-sm font-medium mb-2">
-                        Why do you want to join TechForge?
+                        Why do you want to join ArcShift?
                       </label>
                       <Textarea
                         name="why"

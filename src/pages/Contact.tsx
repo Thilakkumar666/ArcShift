@@ -10,8 +10,8 @@ const contactInfo = [
   {
     icon: Mail,
     title: "Email",
-    value: "techforge@college.edu",
-    link: "mailto:techforge@college.edu",
+    value: "arcshift@college.edu",
+    link: "mailto:arcshift@college.edu",
   },
   {
     icon: MapPin,

@@ -14,7 +14,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Layout from "@/components/layout/Layout";
-import heroBg from "@/assets/hero-bg.jpg";
+import heroBg from "@/assets/hero-bg.jpeg";
 
 const fadeInUp = {
   initial: { opacity: 0, y: 20 },
@@ -291,7 +291,7 @@ const Index = () => {
             </h2>
             <p className="text-lg text-muted-foreground mb-8">
               Whether you're a beginner or an experienced developer, there's a
-              place for you in TechForge. Let's build something amazing together.
+              place for you in ArcShift. Let's build something amazing together.
             </p>
             <Link to="/join">
               <Button variant="glow" size="xl">

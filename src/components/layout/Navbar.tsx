@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Zap } from "lucide-react";
+import { Menu, X, Rocket } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const navLinks = [
@@ -28,9 +28,9 @@ const Navbar = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 group">
             <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-secondary flex items-center justify-center glow-effect">
-              <Zap className="w-6 h-6 text-primary-foreground" />
+              <Rocket className="w-6 h-6 text-primary-foreground" />
             </div>
-            <span className="text-xl font-bold gradient-text">TechForge</span>
+            <span className="text-xl font-bold gradient-text">ArcShift</span>
           </Link>
 
           {/* Desktop Navigation */}
