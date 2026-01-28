@@ -18,7 +18,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Layout from "@/components/layout/Layout";
-import heroBg from "@/assets/hero-bg.jpeg";
+import heroBg from "@/assets/ArchShift_main.png";
 import { useSmoothScroll } from "@/hooks/use-smooth-scroll";
 
 const fadeInUp = {
