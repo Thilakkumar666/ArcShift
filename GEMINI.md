@@ -12,18 +12,11 @@ The project structure is organized with source code in the `src` directory, whic
 
 The following scripts are available in `package.json` to build, run, and test the application:
 
-*   **`npm run dev`**: Starts the development server with hot-reloading. The application will be available at `http://localhost:8080`.
-*   **`npm run build`**: Builds the application for production. The output is placed in the `dist` directory.
+* **`npm run build`**: Builds the application for production. The output is placed in the `dist` directory.
 *   **`npm run lint`**: Lints the codebase using ESLint to enforce code quality.
 *   **`npm run test`**: Runs the test suite using Vitest.
 
-### Development
 
-To start the development server, run:
-
-```sh
-npm run dev
-```
 
 ### Production Build
 

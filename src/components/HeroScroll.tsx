@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { cn } from "@/lib/utils";
 import heroBg from "@/assets/ArchShift_main.png";
+import { ChevronDown } from "lucide-react";
 
 const HeroScroll = () => {
   const [isRevealed, setIsRevealed] = useState(false);
@@ -56,6 +57,19 @@ const HeroScroll = () => {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-black/50" />
       </div>
+
+      {!isRevealed && (
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -20 }}
+          transition={{ duration: 0.5, repeat: Infinity, repeatType: "reverse" }}
+          className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center text-white"
+        >
+          <p className="text-sm mb-2">Scroll to reveal</p>
+          <ChevronDown className="w-6 h-6 animate-bounce" />
+        </motion.div>
+      )}
     </motion.div>
   );
 };
