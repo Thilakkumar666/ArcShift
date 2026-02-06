@@ -37,7 +37,7 @@ export const teamMembers: TeamMember[] = [
     role: "Communications Lead",
     bio: "Connecting ArcShift with the world.",
     image: "/src/assets/princeton.jpeg",
-    socials: { twitter: "#", linkedin: "#" },
+    socials: { twitter: "#", linkedin: "https://www.linkedin.com/in/princeton-vishal-2k05" },
   },
   {
     id: 3, // Campus Ambassador ID
@@ -45,7 +45,7 @@ export const teamMembers: TeamMember[] = [
     role: "Campus Ambassador",
     bio: "Spreading the word about ArcShift across campus.",
     image: "/src/assets/ramprakash.jpeg",
-    socials: { twitter: "#", linkedin: "#" },
+    socials: { twitter: "#", linkedin: "https://www.linkedin.com/in/ramprakashrp2004/" },
   },
   {
     id: 7,
@@ -69,6 +69,6 @@ export const teamMembers: TeamMember[] = [
     role: "Operations Lead",
     bio: "Ensuring the smooth operation of ArcShift.",
     image: "/src/assets/Vivin.jpeg",
-    socials: { github: "#", linkedin: "#" },
+    socials: { github: "#", linkedin: "https://www.linkedin.com/in/vivin-k-s-40a5a92a0" },
   },
 ];

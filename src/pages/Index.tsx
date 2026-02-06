@@ -20,6 +20,7 @@ import { Button } from "@/components/ui/button";
 import Layout from "@/components/layout/Layout";
 import { useSmoothScroll } from "@/hooks/use-smooth-scroll";
 import HeroScroll from "@/components/HeroScroll";
+import React, { useState, useEffect } from "react"; // Import useState and useEffect
 
 const fadeInUp = {
   initial: { opacity: 0, y: 20 },

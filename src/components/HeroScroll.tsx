@@ -10,16 +10,21 @@ const HeroScroll = () => {
   const heroRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const handleWheel = (e: WheelEvent) => {
-      if (isRevealed) {
-        window.removeEventListener("wheel", handleWheel);
-        return;
+    // Check session storage on mount
+    const hasBeenRevealed = sessionStorage.getItem('heroRevealed') === 'true';
+    if (hasBeenRevealed) {
+      setIsRevealed(true);
+      if (heroRef.current) {
+        heroRef.current.style.display = "none";
       }
+      document.body.style.overflowY = "auto";
+      return; // Skip setting up wheel listener if already revealed
+    }
 
-      e.preventDefault();
-
+    const handleWheel = (e: WheelEvent) => {
       if (e.deltaY > 0) {
         setIsRevealed(true);
+        sessionStorage.setItem('heroRevealed', 'true'); // Store in session storage
         controls.start({ y: "100vh" }).then(() => {
           if (heroRef.current) {
             heroRef.current.style.display = "none";
@@ -28,6 +33,7 @@ const HeroScroll = () => {
         });
         window.removeEventListener("wheel", handleWheel);
       }
+      e.preventDefault(); // Prevent page scroll while hero is active
     };
 
     document.body.style.overflowY = "hidden";
@@ -37,7 +43,7 @@ const HeroScroll = () => {
       window.removeEventListener("wheel", handleWheel);
       document.body.style.overflowY = "auto";
     };
-  }, [isRevealed, controls]);
+  }, [controls]); // controls is a stable reference, isRevealed is managed locally now.
 
   return (
     <motion.div
