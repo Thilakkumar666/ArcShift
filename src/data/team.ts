@@ -23,6 +23,14 @@ export const teamMembers: TeamMember[] = [
     socials: { linkedin: "#" },
   },
   {
+    id: 6,
+    name: "Dhersheni M",
+    role: "Outreach Lead",
+    bio: "Building industry partnerships and sponsorships.",
+    image: "/src/assets/Dhershini M.jpeg",
+    socials: { linkedin: "#", email: "outreach@arcshift.edu" },
+  },
+  {
     id: 5,
     name: "Princeton Vishal J",
     role: "Communications Lead",
@@ -39,16 +47,8 @@ export const teamMembers: TeamMember[] = [
     socials: { twitter: "#", linkedin: "#" },
   },
   {
-    id: 6,
-    name: "Dhershini M",
-    role: "Outreach Lead",
-    bio: "Building industry partnerships and sponsorships.",
-    image: "/src/assets/Dhershini M.jpeg",
-    socials: { linkedin: "#", email: "outreach@arcshift.edu" },
-  },
-  {
     id: 7,
-    name: "Thilak Kumar",
+    name: "Thilak Kumar K",
     role: "Technical Lead",
     bio: "Leading the technical development of ArcShift.",
     image: "/src/assets/Thilak kumar k godlook.jpeg",

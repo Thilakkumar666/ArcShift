@@ -140,7 +140,7 @@ export const AnimatedTeamCard: React.FC<{
           animate={isHovered ? { opacity: 0, y: -10 } : { opacity: 1, y: 0 }}
           transition={{ duration: isHovered ? 0.1 : 0.2 }}
         >
-          {member.name}
+          {member.role}
         </motion.h3>
 
         <AnimatePresence>
