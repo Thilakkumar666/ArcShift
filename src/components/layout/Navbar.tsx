@@ -26,9 +26,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 group">
-            <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-secondary flex items-center justify-center glow-effect">
-              <Rocket className="w-6 h-6 text-primary-foreground" />
-            </div>
+            <img src="/src/assets/Arc Shift Logo.png" alt="ArcShift Logo" className="h-10 rounded-full" />
             <span className="text-xl font-bold gradient-text">ArcShift</span>
           </Link>
 
