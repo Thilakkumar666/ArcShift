@@ -10,19 +10,19 @@ const contactInfo = [
   {
     icon: Mail,
     title: "Email",
-    value: "arcshift@college.edu",
-    link: "mailto:arcshift@college.edu",
+    value: "arcshiftofficial@gmail.com",
+    link: "mailto:arcshiftofficial@gmail.com",
   },
   {
     icon: MapPin,
     title: "Location",
-    value: "Tech Building, Room 301\nInnovation University",
-    link: null,
+    value: "C block No.1, Jawaharlal\nNehru Rd, Vadapalani Chennai,\nTamil Nadu 600026",
+    link: "https://www.google.com/maps/search/C+block+No.1,+Jawaharlal+Nehru+Rd,+Vadapalani+Chennai,+Tamil+Nadu+600026",
   },
   {
     icon: Phone,
     title: "Office Hours",
-    value: "Mon-Fri: 4:00 PM - 7:00 PM",
+    value: "Monday - Friday: 8:00 AM - 3:00 PM",
     link: null,
   },
 ];
