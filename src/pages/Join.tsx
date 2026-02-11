@@ -48,10 +48,39 @@ const Join = () => {
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Simulate form submission
-    setIsSubmitted(true);
+
+    try {
+      await fetch(
+        "https://script.google.com/macros/s/AKfycbx4eJhHRDa8MvtK6fM1y6R-zlpj_lxt_p4VzsmptC8rTicGMQzAF2kFy8NmvC3yZBHf/exec",
+        {
+          method: "POST",
+          mode: "no-cors",   // ⭐ VERY IMPORTANT
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
+
+      // Since we cannot read response in no-cors mode,
+      // reaching here means SUCCESS 🎉
+      setIsSubmitted(true);
+
+      setFormData({
+        name: "",
+        email: "",
+        year: "",
+        department: "",
+        skills: "",
+        why: "",
+      });
+
+    } catch (error) {
+      console.error("Error submitting application:", error);
+      alert("Something went wrong. Please try again.");
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
