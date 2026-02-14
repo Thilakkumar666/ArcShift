@@ -29,7 +29,7 @@ export const teamMembers: TeamMember[] = [
     name: "Ramprakash R",
     role: "Campus Ambassador",
     bio: "Spreading the word about ArcShift across campus.",
-    image: ramprakash,
+    image: "/src/assets/ramprakash-r.jpeg",
     socials: { linkedin: "https://www.linkedin.com/in/ramprakashrp2004/" },
   },
   {
@@ -37,7 +37,7 @@ export const teamMembers: TeamMember[] = [
     name: "Sheerin S",
     role: "Creative Lead",
     bio: "Designing the future of ArcShift.",
-    image: sheerin,
+    image: "/src/assets/sheerin-s.jpeg",
     socials: { linkedin: "https://www.linkedin.com/in/sheerin-s-500372246?utm_source=share_via&utm_content=profile&utm_medium=member_android", instagram: "https://www.instagram.com/sheerin_s/" },
   },
   {
@@ -45,7 +45,7 @@ export const teamMembers: TeamMember[] = [
     name: "E Yagna Sai Harshith",
     role: "Community Lead",
     bio: "Building a strong and vibrant community.",
-    image: harshit,
+    image: "/src/assets/yagna-sai-harshith-e.jpeg",
     socials: { linkedin: "https://www.linkedin.com/in/yagna-sai-harshith-eedpuganti-118b952a8" , github: "https://github.com/Thilakkumar-K" },
   },
   {
@@ -53,7 +53,7 @@ export const teamMembers: TeamMember[] = [
     name: "Thilak Kumar K",
     role: "Technical Lead",
     bio: "Leading the technical development of ArcShift.",
-    image: thilak,
+    image: "/src/assets/thilak-kumar-k.jpeg",
     socials: { linkedin: "https://www.linkedin.com/in/thilak-kumar-k/"  ,github: "https://github.com/Thilakkumar-K"},
   },
   {
@@ -61,7 +61,7 @@ export const teamMembers: TeamMember[] = [
     name: "Dhersheni M",
     role: "Outreach Lead",
     bio: "Building industry partnerships and sponsorships.",
-    image: dhershini,
+    image: "/src/assets/dhershini-m.jpeg",
     socials: { linkedin: "https://www.linkedin.com/in/dhersheni-murali22/", email: "dhersheni22@gmail.com", instagram: "#" },
   },
   {
@@ -69,7 +69,7 @@ export const teamMembers: TeamMember[] = [
     name: "Vivin K S",
     role: "Operations Lead",
     bio: "Ensuring the smooth operation of ArcShift.",
-    image: vivin,
+    image: "/src/assets/vivin-k-s.jpeg",
     socials: { github: "#", linkedin: "https://www.linkedin.com/in/vivin-k-s-40a5a92a0" },
   },
   {
@@ -77,7 +77,7 @@ export const teamMembers: TeamMember[] = [
     name: "Princeton Vishal J",
     role: "Communications Lead",
     bio: "Connecting ArcShift with the world.",
-    image: princeton,
+    image: "/src/assets/princeton-vishal-j.jpeg",
     socials: { linkedin: "https://www.linkedin.com/in/princeton-vishal-2k05" },
   },
 ];
