@@ -1,7 +1,7 @@
 // @ts-nocheck
 import ramprakash from "@/assets/ramprakash.jpeg";
 import sheerin from "@/assets/Sheerin.jpeg";
-import harshit from "@/assets/harshit.jpeg";
+import harshit from "@/assets/harshit_.jpeg";
 import thilak from "@/assets/Thilak kumar k godlook.jpeg";
 import dhershini from "@/assets/Dhershini M.jpeg";
 import vivin from "@/assets/Vivin.jpeg";
