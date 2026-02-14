@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ExternalLink, Github, ChevronRight, Filter, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Layout from "@/components/layout/Layout";
+import { projects } from "@/data/projectData"; // Import projects from data file
 
 type ProjectStatus = "completed" | "ongoing" | "planned";
 
@@ -19,72 +20,8 @@ interface Project {
   hackathon?: string;
 }
 
-const projects: Project[] = [
-  {
-    id: 1,
-    title: "EcoTrack",
-    description: "AI-powered carbon footprint tracker for individuals and organizations",
-    longDescription: "EcoTrack uses machine learning to analyze user behavior and provide personalized recommendations for reducing carbon emissions. Built for Google Solution Challenge 2023.",
-    techStack: ["React", "TensorFlow", "Node.js", "MongoDB"],
-    status: "completed",
-    category: "AI/ML",
-    hackathon: "Google Solution Challenge",
-    github: "#",
-    demo: "#",
-  },
-  {
-    id: 2,
-    title: "MedConnect",
-    description: "Telemedicine platform connecting rural patients with specialists",
-    longDescription: "A comprehensive telemedicine solution featuring video consultations, prescription management, and health record tracking. Winner at Microsoft Imagine Cup regionals.",
-    techStack: ["Next.js", "Azure", "PostgreSQL", "WebRTC"],
-    status: "completed",
-    category: "Healthcare",
-    hackathon: "Microsoft Imagine Cup",
-    github: "#",
-  },
-  {
-    id: 3,
-    title: "CodeCollab",
-    description: "Real-time collaborative coding environment with AI assistance",
-    longDescription: "An online IDE that enables real-time collaboration between developers with integrated AI code suggestions and debugging tools.",
-    techStack: ["React", "Socket.io", "OpenAI", "Docker"],
-    status: "ongoing",
-    category: "Developer Tools",
-    github: "#",
-  },
-  {
-    id: 4,
-    title: "AgriSense",
-    description: "IoT-based smart farming solution for crop monitoring",
-    longDescription: "Using IoT sensors and data analytics to help farmers optimize irrigation, detect diseases early, and improve crop yields.",
-    techStack: ["Python", "Arduino", "Firebase", "TensorFlow"],
-    status: "ongoing",
-    category: "IoT",
-  },
-  {
-    id: 5,
-    title: "SafeRoute",
-    description: "Women's safety app with real-time location sharing and SOS features",
-    longDescription: "A mobile app designed to enhance personal safety with features like route tracking, emergency contacts, and crowd-sourced safety ratings.",
-    techStack: ["Flutter", "Firebase", "Google Maps API"],
-    status: "completed",
-    category: "Mobile",
-    github: "#",
-    demo: "#",
-  },
-  {
-    id: 6,
-    title: "LearnFlow",
-    description: "Adaptive learning platform powered by AI",
-    longDescription: "An educational platform that adapts to each student's learning pace and style using AI-driven personalization.",
-    techStack: ["React", "Python", "FastAPI", "PostgreSQL"],
-    status: "planned",
-    category: "EdTech",
-  },
-];
 
-const categories = ["All", "AI/ML", "Healthcare", "Developer Tools", "IoT", "Mobile", "EdTech"];
+const categories = ["All", "AI/ML"]; // Updated categories based on the new project
 const statuses: (ProjectStatus | "all")[] = ["all", "completed", "ongoing", "planned"];
 
 const statusColors: Record<ProjectStatus, string> = {

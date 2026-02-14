@@ -25,6 +25,7 @@ import Layout from "@/components/layout/Layout";
 import { useSmoothScroll } from "@/hooks/use-smooth-scroll";
 import HeroScroll from "@/components/HeroScroll";
 import React, { useState, useEffect } from "react"; // Import useState and useEffect
+import { events } from "@/data/eventData"; // Import events from data file
 
 const fadeInUp = {
   initial: { opacity: 0, y: 20 },
@@ -80,23 +81,7 @@ const stats = [
   { value: "20+", label: "Workshops" },
 ];
 
-const upcomingEvents = [
-  {
-    title: "Google Solution Challenge",
-    date: "Feb 2024",
-    type: "Hackathon",
-  },
-  {
-    title: "Web3 Workshop Series",
-    date: "Jan 2024",
-    type: "Workshop",
-  },
-  {
-    title: "AI/ML Bootcamp",
-    date: "Jan 2024",
-    type: "Training",
-  },
-];
+const upcomingEvents = events.filter((e) => e.isUpcoming).slice(0, 3);
 
 const values = [
   {
@@ -179,7 +164,7 @@ const Index = () => {
             >
               <Zap className="w-4 h-4 text-primary" />
               <span className="text-sm text-primary font-medium">
-                Building the future, one hackathon at a time
+                Code . Compile . Conqure
               </span>
             </motion.div>
 

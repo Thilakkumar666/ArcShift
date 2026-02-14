@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Calendar, Clock, MapPin, Users, ArrowRight, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Layout from "@/components/layout/Layout";
+import { events } from "@/data/eventData"; // Import events from data file
 
 interface Event {
   id: number;
@@ -13,89 +14,12 @@ interface Event {
   type: "hackathon" | "workshop" | "talk" | "competition";
   capacity?: number;
   isUpcoming: boolean;
+  registrationLink?: string;
 }
-
-const events: Event[] = [
-  {
-    id: 1,
-    title: "Google Solution Challenge 2024",
-    description: "Build solutions using Google technologies to address the UN's Sustainable Development Goals. Join us for a 48-hour hackathon experience.",
-    date: "February 15-17, 2024",
-    time: "9:00 AM - 9:00 AM",
-    location: "Tech Lab, Building A",
-    type: "hackathon",
-    capacity: 100,
-    isUpcoming: true,
-  },
-  {
-    id: 2,
-    title: "Web3 Development Workshop",
-    description: "Learn the fundamentals of blockchain development, smart contracts, and decentralized applications in this hands-on workshop.",
-    date: "January 28, 2024",
-    time: "2:00 PM - 6:00 PM",
-    location: "Room 302, Tech Building",
-    type: "workshop",
-    capacity: 40,
-    isUpcoming: true,
-  },
-  {
-    id: 3,
-    title: "AI/ML Bootcamp: From Zero to Hero",
-    description: "A comprehensive 3-day bootcamp covering machine learning fundamentals, deep learning, and practical AI applications.",
-    date: "January 20-22, 2024",
-    time: "10:00 AM - 5:00 PM",
-    location: "Auditorium",
-    type: "workshop",
-    capacity: 80,
-    isUpcoming: true,
-  },
-  {
-    id: 4,
-    title: "Industry Expert Talk: Building at Scale",
-    description: "Learn from a senior engineer at Microsoft about building scalable systems and career tips for aspiring developers.",
-    date: "January 15, 2024",
-    time: "4:00 PM - 6:00 PM",
-    location: "Virtual (Zoom)",
-    type: "talk",
-    isUpcoming: true,
-  },
-  {
-    id: 5,
-    title: "Microsoft Imagine Cup Prep",
-    description: "Participated in Microsoft's global student technology competition with innovative solutions.",
-    date: "December 10, 2023",
-    time: "Full Day",
-    location: "Innovation Hub",
-    type: "hackathon",
-    isUpcoming: false,
-  },
-  {
-    id: 6,
-    title: "Flutter App Development Workshop",
-    description: "Built cross-platform mobile applications with Flutter and Firebase integration.",
-    date: "November 25, 2023",
-    time: "2:00 PM - 7:00 PM",
-    location: "Lab 205",
-    type: "workshop",
-    isUpcoming: false,
-  },
-  {
-    id: 7,
-    title: "Competitive Programming Contest",
-    description: "Internal coding competition to prepare members for ACM-ICPC and other competitive programming events.",
-    date: "November 15, 2023",
-    time: "10:00 AM - 4:00 PM",
-    location: "Computer Lab",
-    type: "competition",
-    isUpcoming: false,
-  },
-];
 
 const typeColors = {
   hackathon: "bg-primary/20 text-primary border-primary/30",
   workshop: "bg-accent/20 text-accent border-accent/30",
-  talk: "bg-secondary/20 text-secondary border-secondary/30",
-  competition: "bg-neon-pink/20 text-neon-pink border-neon-pink/30",
 };
 
 const upcomingEvents = events.filter((e) => e.isUpcoming);
@@ -190,10 +114,18 @@ const Events = () => {
                   </div>
                   
                   <div className="lg:flex-shrink-0">
-                    <Button variant="glow" className="w-full lg:w-auto">
-                      Register Now
-                      <ArrowRight className="w-4 h-4" />
-                    </Button>
+                    {event.registrationLink && (
+                      <a
+                        href={event.registrationLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <Button variant="glow" className="w-full lg:w-auto">
+                          Register Now
+                          <ArrowRight className="w-4 h-4" />
+                        </Button>
+                      </a>
+                    )}
                   </div>
                 </div>
               </motion.div>
