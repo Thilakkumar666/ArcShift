@@ -6,8 +6,8 @@ import "@/components/Hexagon.css";
 import React, { useState } from "react"; // Added useState
 import AnimatedHoneycombGrid from "@/components/AnimatedHoneycombGrid"; // Import the new component
 import { teamMembers } from "@/data/team"; // Import the combined team data
-import chitra from "@/assets/Dr. P. Chitra.jpeg";
-import jayalakshmi from "@/assets/Dr. S. Jayalakshmi.jpeg";
+import chitra from "@/assets/dr-p-chitra.jpeg";
+import jayalakshmi from "@/assets/dr-s-jayalakshmi.jpeg";
 
 const fadeInUp = {
   initial: { opacity: 0, y: 20 },

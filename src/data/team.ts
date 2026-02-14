@@ -1,10 +1,10 @@
 // @ts-nocheck
 import ramprakash from "@/assets/ramprakash.jpeg";
-import sheerin from "@/assets/Sheerin.jpeg";
-import harshit from "@/assets/harshit_.jpeg";
-import thilak from "@/assets/Thilak kumar k godlook.jpeg";
-import dhershini from "@/assets/Dhershini M.jpeg";
-import vivin from "@/assets/Vivin.jpeg";
+import sheerin from "@/assets/sheerin.jpeg";
+import harshit from "@/assets/harshit-e.jpeg";
+import thilak from "@/assets/thilak-kumar-k-godlook.jpeg";
+import dhershini from "@/assets/dhershini-m.jpeg";
+import vivin from "@/assets/vivin.jpeg";
 import princeton from "@/assets/princeton.jpeg";
 
 export interface TeamMember {
