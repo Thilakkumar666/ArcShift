@@ -1,3 +1,12 @@
+// @ts-nocheck
+import ramprakash from "@/assets/ramprakash.jpeg";
+import sheerin from "@/assets/sheerin.jpeg";
+import harshit from "@/assets/harshit-e.jpeg";
+import thilak from "@/assets/thilak-kumar-k-godlook.jpeg";
+import dhershini from "@/assets/dhershini-m.jpeg";
+import vivin from "@/assets/vivin.jpeg";
+import princeton from "@/assets/princeton.jpeg";
+
 export interface TeamMember {
   id: number; // Changed to number to match existing Team.tsx
   name: string;

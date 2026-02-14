@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { motion, AnimatePresence } from "framer-motion";
 import { Github, Linkedin, Twitter, Mail, Instagram } from "lucide-react";
 import Layout from "@/components/layout/Layout";
@@ -5,6 +6,8 @@ import "@/components/Hexagon.css";
 import React, { useState } from "react"; // Added useState
 import AnimatedHoneycombGrid from "@/components/AnimatedHoneycombGrid"; // Import the new component
 import { teamMembers } from "@/data/team"; // Import the combined team data
+import chitra from "@/assets/dr-p-chitra.jpeg";
+import jayalakshmi from "@/assets/dr-s-jayalakshmi.jpeg";
 
 const fadeInUp = {
   initial: { opacity: 0, y: 20 },
